@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Orbitron", sans-serif;
+  color: #22cc2b;
+  background-color: #000000;
+}
+
+body {
+  height: 100vh;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+
+.result {
+  min-height: calc(100vh / 6);
+  border: 3px solid #3e3e3e;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 5rem;
+  text-align: right;
+  padding: 10px;
+}
+
+.bottom {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  height: calc(100% * 5 / 6);
+}
+
+.left-side {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 25%;
+  height: 100%;
+}
+
+.right-side {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 75%;
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: 3px solid #3e3e3e;
+  border-radius: 25px;
+  min-height: calc(100vh / 6);
+  flex: 1;
+  font-size: 3rem;
+}
+
+.backspace,
+.plus,
+.minus,
+.times,
+.divide {
+  min-width: 100%;
+  min-height: calc((100% - 40px) / 5);
+}
+
+.dot,
+.AC,
+.equals,
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.zero {
+  min-width: calc((100% - 20px) / 3);
+  min-height: calc((100% - 40px) / 5);
+}
