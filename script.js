@@ -40,6 +40,10 @@ function addToDisplay(e) {
       return;
     }
   }
+  if (display === "" && e.target.className === "zero") {
+    return;
+  }
+
   resultBox.textContent += e.target.textContent;
   display = resultBox.textContent;
 }
